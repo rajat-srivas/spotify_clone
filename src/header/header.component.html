@@ -1,0 +1,22 @@
+<header>
+  <div class="navbar container">
+    <div class="logo">
+      <img src="../assets/Spotify_logo_with_text.svg" alt="">
+    </div>
+
+    <div class="burger hide-for-large-screen" (click) = "MobileMenuOpen($event)"
+    [ngClass] = "mobileMenuOpne ? 'toggle' : ''" >
+      <span class="line1" ></span>
+      <span  class="line2"></span>
+      <span  class="line3"></span>
+    </div>
+
+    <div class="list hide-for-small-screen">
+      <ul>
+        <img *ngIf="loggedIn" [src]= "authService.loggedInUser.images[0].url" alt="">
+        <li class="list__items"><a href={{authService.spotifyUrl}}>{{headerText}}</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+

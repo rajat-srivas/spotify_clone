@@ -1,0 +1,22 @@
+section {
+  width: 100%;
+  height: 90vh;
+}
+
+.playlist {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  background-color: black;
+
+}
+
+.sidebar {
+  height: 90vh;
+}
+
+.content{
+}
+
+h2{
+  margin-top: 0;
+}
